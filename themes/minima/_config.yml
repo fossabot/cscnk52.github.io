@@ -30,7 +30,7 @@ tcolor: 0FA0CE
 footer: true
 github: https://github.com/cscnk52/
 douban: https://www.douban.com/people/csnck52/
-rss: https://adisaktijrs.github.io/minima/
+rss: https://cscnk52.github.io/atom.xml
 
 # Misc
 nanobar: /js/nanobar.min.js
