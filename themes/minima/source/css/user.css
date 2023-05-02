@@ -1,8 +1,5 @@
 @import 'lxgw-wenkai-webfont/style.css';
 
-@font-face {
-    font-family: LxgwWenKai;
-    src: local('LXGW WenKai'), url(https://cdn.jsdelivr.net/gh/lxgw/lxgw-wenkai-webfont@0.2.0/fonts/LXGWWenKai-Regular.woff2) format("woff2");
-    font-weight: 400;
-    font-style: normal
+body {
+    font-family: "LXGW WenKai", sans-serif;
 }
