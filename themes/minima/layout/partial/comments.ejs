@@ -1,33 +1,3 @@
-<% if (theme.disqus_enabled && theme.disqus_shortname){ %>
-  <hr>
-<section id="comments" class="mt-2 mb-3">
-
-  <div id="disqus_thread">
-    <a href="#" class="button button-primary" onclick="loadDisqus();return false;">View / Make Comments</a>
-  </div>
-
-  <script>
-    var disqus_config = function() {
-      this.page.url = '<%= config.url + '/' + page.canonical_path %>';
-      this.page.identifier = '<%= page.id || page.canonical_path %>';
-      this.page.title = '<%= page.title %>';
-    };
-
-    var is_disqus_loaded = false;
-
-    function loadDisqus() {
-      if (!is_disqus_loaded) {
-        is_disqus_loaded = true;
-
-        var d = document,
-          s = d.createElement('script');
-        s.src = 'https://<%= theme.disqus_shortname %>.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      }
-    }
-
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
-<% } %>
+<div id="cusdis_thread" data-host="https://cusdis.com" data-app-id="a2e597fd-5f45-44a1-ade9-4c73e66376a0"
+  data-page-id="{{ PAGE_ID }}" data-page-url="{{ PAGE_URL }}" data-page-title="{{ PAGE_TITLE }}"></div>
+<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
